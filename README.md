@@ -12,11 +12,12 @@ Analysis of the similarity between a query sequence and the FM-index via the pro
 -Python 3.7+  
 -package: pickle，argparse  
 ## How to use ## 
+### 1.Creating an index
 Generate SPSS and FM-index using FASTA files as input:  
 ```
 python3 SequencesToIndexedSPSS.py -i <input_file> -k <kmer_size> -t <threshold> -o <output_file>  
 ```
-## Available options ##
+-**Available options**
 ```
 -i : the input FASTA file.  
 -k : k-mer size (positive integer)).  
@@ -24,4 +25,12 @@ python3 SequencesToIndexedSPSS.py -i <input_file> -k <kmer_size> -t <threshold> 
 -o : output .dump file (FM-index).
 ```
 -**Exemple** :   
+```
+python3 SequencesToIndexedSPSS.py -i reads_30x.fasta -t 2 -k 31 -o my_fm_index
+```
+### 2.Executable query ### 
+Comparison of query sequence similarity using the generated FM-index file:  
+```
+python3 query_indexed_spss.py -q <query_file> -i <index_file> -k <kmer_size> -o <output_file>  
+```
 
