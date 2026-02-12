@@ -33,4 +33,16 @@ Comparison of query sequence similarity using the generated FM-index file:
 ```
 python3 query_indexed_spss.py -q <query_file> -i <index_file> -k <kmer_size> -o <output_file>  
 ```
+## Structure of the project ##
+```
+
+|-- README.md             # Document de description du projet
+|-- Code/
+|   |-- query_indexed_spss.py       # Module d'interrogation
+|   |-- fmi.py                      # FM-index réalisé
+|   |-- SequencesToIndexedSPSS.py # Module de construction d'index
+|   `-- timer.py                    # mesure du temps
+|   |-- spss.py                     # Module de construction de spss
+|   |-- tools_karkkainen_sanders.pu  # calcule de SA pour FM-index
+```
 
