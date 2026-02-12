@@ -36,13 +36,13 @@ python3 query_indexed_spss.py -q <query_file> -i <index_file> -k <kmer_size> -o 
 ## Structure of the project ##
 ```
 
-|-- README.md             # Document de description du projet
+|-- README.md             # Project description document
 |-- Code/
-|   |-- query_indexed_spss.py       # Module d'interrogation
-|   |-- fmi.py                      # FM-index réalisé
-|   |-- SequencesToIndexedSPSS.py # Module de construction d'index
-|   `-- timer.py                    # mesure du temps
-|   |-- spss.py                     # Module de construction de spss
-|   |-- tools_karkkainen_sanders.pu  # calcule de SA pour FM-index
+|   |-- query_indexed_spss.py       # Interrogation module
+|   |-- fmi.py                      # FM index completed
+|   |-- SequencesToIndexedSPSS.py   # Index construction module
+|   `-- timer.py                    # measurement of time
+|   |-- spss.py                     # SPSS construction module
+|   |-- tools_karkkainen_sanders.pu  # SA calculation for FM index
 ```
 
